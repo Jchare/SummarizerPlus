@@ -1,0 +1,2 @@
+chrome.runtime.onInstalled.addListener(()=>{chrome.contextMenus.create({id:"summarizeAndTranslate",title:"Summarize Highlighted Text",contexts:["selection"]})}),chrome.contextMenus.onClicked.addListener((e,t)=>{if("summarizeAndTranslate"===e.menuItemId&&e.selectionText){let t=e.selectionText.trim();chrome.storage.local.set({textToSummarize:t},()=>{console.log("Highlighted text saved for popup:",t)}),chrome.windows.create({url:"popup.html",type:"popup",width:250,height:330,left:200,top:100,focused:!0})}});
+//# sourceMappingURL=background.js.map
