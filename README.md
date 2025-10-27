@@ -57,6 +57,7 @@ Translate text
 Summarize + Translate
 
 ## Demo
+Youtube Link: https://youtu.be/KZ_VW9MQpXQ 
 ## Troubleshooting
 - Clear chrome.storage if the extension seems to show old selected text.
 - Common errors you might encounter:
