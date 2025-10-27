@@ -1,0 +1,58 @@
+html, body {
+  width: 250px; 
+  height: 100%; 
+  font-family: sans-serif;
+  margin: 0; 
+  padding: 0; 
+}
+
+.merged-popup {
+  padding: 10px;
+  
+  width: calc(100% - 0px); 
+  box-sizing: border-box; 
+}
+
+
+h5{
+    text-align: center;
+}
+button{
+    width:100%;
+    margin: top 5px;
+    padding:8px; border: none;
+
+
+}
+button:hover{
+    box-shadow: 0 5px rgba(0,0,0,0.3);
+    background-color: #bcc6d1;
+}
+input{
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: none;
+}
+
+.output-box{
+    margin-top: 10px;
+    padding: 10px;
+    min-height: 50px;
+    width:100%;
+    overflow-wrap: break-word;
+
+}
+.merged-container{
+    display: flex;
+    flex-direction: column;
+    border:1px solid #ccc;
+    overflow: hidden;
+    
+
+}
+.merged-popup{
+   border:1px solid #ccc;
+    overflow: hidden; 
+    border-radius: 10px;
+}

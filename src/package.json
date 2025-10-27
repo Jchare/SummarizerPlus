@@ -1,0 +1,28 @@
+{
+  "name": "quickaiextension",
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "@google/genai": "^1.25.0",
+    "@google/generative-ai": "^0.24.1",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "@parcel/config-webextension": "^2.16.0",
+    "copyfiles": "^2.4.1",
+    "parcel": "^2.16.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "start-dev": "parcel watch popup.html background.js --dist-dir dist",
+    "build": "parcel build popup.html background.js --dist-dir dist --public-url ./ && copyfiles manifest.json dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
