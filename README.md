@@ -8,14 +8,10 @@ A Chrome Extension that summarizes and translates highlighted/pasted text using 
 - [Usage](#usage)
 - [Demo](#demo)
 - [Troubleshooting](#troubleshooting)
-- [Future Improvements](#future-improvements)
 - [License](#license)
 
 ## Overview
-Summarize+ is a full-stack Chrome Extension that allows users to:
-- Summarize selected or pasted text
-- Translate text into the users default langauge
-- Perform both operations simultaneously
+QuickAIExtension is a Chrome extension that allows users to summarize and translate highlighted text directly from the browser. The extension can detect the selected text and summarize it in the same language or translate it to the user's preferred language.
 
 
 It uses a client-side + server-side hybrid architecture to ensure privacy and offline-first functionality.
@@ -33,6 +29,34 @@ It uses a client-side + server-side hybrid architecture to ensure privacy and of
 - Gemini Nano AI
 
 ## Installation
-1. Clone this repository:
-```bash
+1. **Clone this repository:**
 
+```git clone https://github.com/Jchare/SummarizerPlus.git```
+```cd SummarizerPlus```
+2.**Instal dependencies**
+```npm install```
+
+3. **Start the local server**
+```node server.js```
+4. Load the chrome extension
+   . Open chrome and go to chrome://extension
+   . Enable Developer mode
+   . Click load unpacked and select the project folder
+
+## Usage
+1. Highlight text on any webpage.
+Right-click and select "Summarize Highlighted Text" from the context menu.A new window will appear with the summarized text
+You can also paste text into the popup and use the buttons in the popup to:
+Summarize text
+Translate text
+Summarize + Translate
+
+## Demo
+## Troubleshooting
+- Ensure server.js is running locally before using the extension.
+- Make sure Node.js and required packages are installed (npm install).
+- 
+- Clear chrome.storage if the extension seems to show old selected text.
+
+## License
+This project is open source under the MIT License
